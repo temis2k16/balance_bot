@@ -28,7 +28,7 @@ async def get_balance(message):
 
 async def main():
     asyncio.create_task(vdsinfo.refresh_data())
-    await bot.polling()
+    await bot.polling(non_stop=True, interval=2.0)
 
 
 if __name__ == '__main__':
