@@ -12,6 +12,7 @@ bot = AsyncTeleBot(BOT_TOKEN)
 vdsinfo = HostVdsInfo()
 user_id = 0
 
+
 # Handle '/start'
 @bot.message_handler(commands=['start'])
 async def send_welcome(message):
