@@ -43,7 +43,7 @@ class HostVdsInfo:
 
 
     async def get_balance(self):
-        successful_login = False
+        successful_login = True
         return_code = 200
         if not self.data:
             successful_login, return_code = await self.login()
